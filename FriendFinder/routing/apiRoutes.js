@@ -1,11 +1,13 @@
 var friends = require("../app/data/friends.js")
+
 module.exports = function (app) {
     app.get("/api/friends", function (req, res) {
         return res.json(friends);
     });
 
-    // best match 
     app.post("/api/friends", function (req, res) {
+
+        // Empty variable that will hold best match's name and photo to push to survey modal
         var bestMatch = {
             name: "",
             photo: "",
@@ -14,6 +16,8 @@ module.exports = function (app) {
         var userData = req.body;
         var userScores = userData.scores;
         var difference = 0;
+
+
         for (let i = 0; i < friends.length; i++) {
             const element = friends[i];
             var difference = 0;
@@ -21,9 +25,12 @@ module.exports = function (app) {
             for (let j = 0; j < element.scores.length; j++) {
                 const scores = element.scores[j];
                 var userScore = userScores[j];
+
+                // Creates a total difference by subtracting scores of user from scores of each friend 
                 difference += Math.abs(parseInt(scores) - parseInt(userScore))
             }
-            // Best Match 
+
+            // Best Match -> survey modal in survey html
             if (bestMatch.scoreDifference > difference) {
                 bestMatch.name = element.name;
                 bestMatch.photo = element.photo;
