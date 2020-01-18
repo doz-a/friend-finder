@@ -30,13 +30,15 @@ module.exports = function (app) {
                 difference += Math.abs(parseInt(scores) - parseInt(userScore))
             }
 
-            // Best Match -> survey modal in survey html
+            // Best Match info 
             if (bestMatch.scoreDifference > difference) {
                 bestMatch.name = element.name;
                 bestMatch.photo = element.photo;
                 bestMatch.scoreDifference = difference
             }
         }
+
+        // Send to survey modal in survey html
         friends.push(userData);
         res.json(bestMatch);
     });
