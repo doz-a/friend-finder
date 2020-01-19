@@ -44,151 +44,182 @@
     </div>
 
     <div class="container text-center">
+
         <h2>Survey Questions</h2>
         <hr>
 
-        <h3><strong>About Your Cat</strong></h3>
-        <h4>Name (Required)</h4>
-        <input type="text" id="name" class="form-control text-center" placeholder="Dorito" required>
+        <div class="row">
+            <div class="col-xs-4"></div>
+            <div class="col-xs-4">
 
-        <h4>Link to Photo Image (Required)</h4>
-        <input type="text" id="photo" class="form-control text-center" placeholder="http://placekitten.com/290/290"
-            required>
+                <h3><strong>About Your Cat</strong></h3>
+                <h4>Name (Required)</h4>
+                <input type="text" id="name" class="form-control text-center" placeholder="Dorito" required>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-4"></div>
+            <div class="col-xs-4">
+                <h4>Link to Photo Image (Required)</h4>
+                <input type="text" id="photo" class="form-control text-center"
+                    placeholder="http://placekitten.com/290/290" required>
+            </div>
+        </div>
 
         <hr>
 
-        <h3><strong>Question 1</strong></h3>
-        <h4>They love to jump around at 2 am in the morning</h4>
-        <select class="chosen-select" id="q1" size="5">
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-        </select>
 
-        <h3><strong>Question 2</strong></h3>
-        <h4>They prefers to eat wet food</h4>
-        <select class="chosen-select" id="q2" size="5">
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-        </select>
+        <div class="row">
+            <div class="col-xs-3">
+                <h3><strong>Question 1</strong></h3>
+                <h4>They love to jump around at 2 am in the morning</h4>
+                <select class="chosen-select" id="q1" size="5">
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="col-xs-3">
+                <h3><strong>Question 2</strong></h3>
+                <h4>They prefers to eat wet food</h4>
+                <select class="chosen-select" id="q2" size="5">
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="col-xs-3">
+                <h3><strong>Question 3</strong></h3>
+                <h4>They like to sleep in a different place every time</h4>
+                <select class="chosen-select" id="q3" size="5">
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="col-xs-3">
+                <h3><strong>Question 4</strong></h3>
+                <h4>They like to cuddle with humans</h4>
+                <select class="chosen-select" id="q4" size="5">
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+        </div>
 
-
-        <h3><strong>Question 3</strong></h3>
-        <h4>They like to sleep in a different place every time</h4>
-        <select class="chosen-select" id="q3" size="5">
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-        </select>
-
-
-        <h3><strong>Question 4</strong></h3>
-        <h4>They like to cuddle with humans</h4>
-        <select class="chosen-select" id="q4" size="5">
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-        </select>
-
-
-        <h3><strong>Question 5</strong></h3>
-        <h4>They are aggressive</h4>
-        <select class="chosen-select" id="q5" size="5">
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-        </select>
-
-
-        <h3><strong>Question 6</strong></h3>
-        <h4>They like to hide in boxes</h4>
-        <select class="chosen-select" id="q6" size="5">
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-        </select>
-
-
-        <h3><strong>Question 7</strong></h3>
-        <h4>They like to eat human food</h4>
-        <select class="chosen-select" id="q7" size="5">
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-        </select>
-
-        <h3><strong>Question 8</strong></h3>
-        <h4>They take naps 50 times a day</h4>
-        <select class="chosen-select" id="q8" size="5">
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-        </select>
-
-        <h3><strong>Question 9</strong></h3>
-        <h4>They attack furry clothing</h4>
-        <select class="chosen-select" id="q9" size="5">
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-        </select>
-
-        <h3><strong>Question 10</strong></h3>
-        <h4>They love pizza</h4>
-        <select class="chosen-select" id="q10" size="5">
-            <option value="1">1 (Strongly Disagree)</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 (Strongly Agree)</option>
-        </select>
+        <div class="row">
+            <div class="col-xs-3">
+                <h3><strong>Question 5</strong></h3>
+                <h4>They are aggressive</h4>
+                <select class="chosen-select" id="q5" size="5">
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="col-xs-3">
+                <h3><strong>Question 6</strong></h3>
+                <h4>They like to hide in boxes</h4>
+                <select class="chosen-select" id="q6" size="5">
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="col-xs-3">
+                <h3><strong>Question 7</strong></h3>
+                <h4>They like to eat human food</h4>
+                <select class="chosen-select" id="q7" size="5">
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="col-xs-3">
+                <h3><strong>Question 8</strong></h3>
+                <h4>They take naps 50 times a day</h4>
+                <select class="chosen-select" id="q8" size="5">
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3"></div>
+            <div class="col-xs-3">
+                <h3><strong>Question 9</strong></h3>
+                <h4>They attack furry clothing</h4>
+                <select class="chosen-select" id="q9" size="5">
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="col-xs-3">
+                <h3><strong>Question 10</strong></h3>
+                <h4>They love pizza</h4>
+                <select class="chosen-select" id="q10" size="5">
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+        </div>
 
         <br>
         <br>
 
         <!-- Submit Button -->
-        <button type="submit" class="btn btn-danger btn-lg btn-block" id="submit"><i class="fa fa-check-circle"
+        <button type="submit" class="btn btn-danger btn-lg" id="submit"><i class="fa fa-check-circle"
                 aria-hidden="true"></i>
             Submit</button>
 
         <hr>
+
+        <!-- Footer  -->
         <footer class="footer text-center">
             <div class="container">
-                <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/doz-a/friend-finder">GitHub
+                <p><a class="text-danger" href="/api/friends">API Friends List</a> | <a class="text-danger"
+                        href="https://github.com/doz-a/friend-finder">GitHub
                         Repo</a></p>
             </div>
+
         </footer>
 
     </div>
 
-    <!-- Modal -->
+    <!-- Modal 1 -->
     <div id="results-modal" class="modal fade" role="dialog">
         <div class="modal-dialog">
 
             <!-- Modal content-->
-            <div class="modal-content">
+            <div class="modal-content text-center">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h2 class="modal-title"><strong>Best Match</strong></h2>
+                    <h2 class="modal-title"><strong>Your cat's best match is...</strong></h2>
                 </div>
                 <div class="modal-body">
                     <h2 id="match-name"></h2>
@@ -196,6 +227,25 @@
                         src="https://pbs.twimg.com/profile_images/1013892310055059457/PVqlqhig_400x400.jpg" alt="">
                 </div>
                 <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Modal 2  -->
+
+    <div id="complete-modal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content text-center">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h2 class="modal-title"><strong>If you want a match for your cat, you need to fill out
+                            all fields
+                            :)</strong></h2>
                     <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
                 </div>
             </div>
@@ -265,7 +315,9 @@
 
                 });
             } else {
-                alert("If you want a match for your cat, you need to fill out all fields :)");
+
+                // Modal toggle if all forms/buttons not completed 
+                $("#complete-modal").modal("toggle");
             }
         });
     </script>
