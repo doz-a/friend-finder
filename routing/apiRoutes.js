@@ -17,11 +17,13 @@ module.exports = function (app) {
         var userScores = userData.scores;
         var difference = 0;
 
-
+        // Loops all friends 
         for (let i = 0; i < friends.length; i++) {
             const element = friends[i];
             var difference = 0;
             console.log(element.name);
+
+            // Loops through each score 
             for (let j = 0; j < element.scores.length; j++) {
                 const scores = element.scores[j];
                 var userScore = userScores[j];
